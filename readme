@@ -1,9 +1,13 @@
 readme
 
-change 1
+这个是分支,推送到远程仓库.
 
+<<<<<<< HEAD
 change 2
 
 冲突2
 
 git fetch
+=======
+测试 git fetch
+>>>>>>> dev
