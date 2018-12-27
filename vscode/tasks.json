@@ -19,9 +19,10 @@
                 "args": [
                     "-ggdb",
                     "\"${file}\"",
-                    "--std=c++11",
+                    "--std=c11",
                     "-o",
-                    "${workspaceRoot}/workspace/${fileBasenameNoExtension}.exe"
+                    "${workspaceRoot}/workspace/${fileBasenameNoExtension}.exe",
+                    "-Wall"
                 ]
             },
             "linux": {
@@ -29,9 +30,11 @@
                 "args": [
                     "-ggdb",
                     "\"${file}\"",
-                    "--std=c++11",
+                    "--std=c11",
+                    "-lpthread"
                     "-o",
-                    "${workspaceRoot}/workspace/${fileBasenameNoExtension}.out"
+                    "${workspaceRoot}/workspace/${fileBasenameNoExtension}.out",
+                    "-Wall"
                 ]
             }
         }
